@@ -1,0 +1,14 @@
+<a [routerLink]="['/video', videoId]" class="thumbnail-card">
+  <div class="thumbnail-image">
+    <img [src]="thumbnailUrl" alt="Video Thumbnail" />
+    <span class="video-duration">{{ duration }}</span>
+  </div>
+  <div class="thumbnail-details">
+    <img class="channel-icon" [src]="channelIconUrl" alt="Channel Icon" />
+    <div class="video-info">
+      <h3 class="video-title">{{ title }}</h3>
+      <p class="channel-name">{{ channelName }}</p>
+      <p class="video-stats">{{ views | number }} views • {{ uploadTime }}</p>
+    </div>
+  </div>
+</a>

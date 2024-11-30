@@ -1,0 +1,33 @@
+<div class="lista-shorts">
+  <div class="short-card" *ngFor="let short of shorts"
+    (mouseenter)="playVideo(videoPlayer)"
+    (mouseleave)="pauseVideo(videoPlayer)"
+    (click)="toggleVideo(videoPlayer)"
+    (dblclick)="openModal(short)">
+    <img [src]="short.thumbnail" alt="Thumbnail" class="short-thumbnail" />
+    <video #videoPlayer [src]="short.videoUrl" class="short-video" muted loop></video>
+    <div class="short-info">
+      <p class="short-title">{{ short.title }} <button (click)="toggleMenu()">Toggle Menu</button></p>
+      <ul *ngIf="isMenuOpen">
+        <li>Denunciar</li>
+        <li>Compartilhar</li>
+        <li>Não tenho interesse</li>
+        <li>Enviar Feedback</li>
+      </ul>
+      <p class="short-details">
+        {{ short.channelName }} &#8226; {{ short.views }} &#8226; {{ short.postedDate }}
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div *ngIf="isModalOpen" class="modal-overlay" (click)="closeModal()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <button class="close-button" (click)="closeModal()">×</button>
+    <video #modalVideoPlayer [src]="selectedShort?.videoUrl" controls></video>
+    <div class="modal-buttons">
+      <button class="fullscreen-button" (click)="openFullscreen(modalVideoPlayer)">Fullscreen</button>
+    </div>
+  </div>
+</div>

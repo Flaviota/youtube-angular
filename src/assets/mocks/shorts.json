@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Natureza",
+    "thumbnail": "assets/imgs/amanhecer.png",
+    "videoUrl": "assets/videos/video-teste.mp4",
+    "channelName": "Channel 1",
+    "views": "1.2M views",
+    "postedDate": "1 dia atras"
+  },
+  {
+    "title": "Short Title 2",
+    "thumbnail": "assets/imgs/angular.png",
+    "videoUrl": "assets/videos/video-teste.mp4",
+    "channelName": "Channel 2",
+    "views": "900K views",
+    "postedDate": "3 days ago"
+  }
+]

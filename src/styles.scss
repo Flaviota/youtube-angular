@@ -1,0 +1,53 @@
+*{
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 100%;
+  line-height: 34px;
+  margin: 0;
+  padding: 0;
+  a, a:hover{
+    text-decoration: none;
+  }
+  li{
+    list-style-type: none;
+  }
+  audio, img, iframe, video{
+    display: inline-block;
+    height: auto;
+    width: 100%;
+  }
+}
+
+//Body
+body{
+  background-color: #0f0f0f;
+  color: #eee;
+}
+
+//Grids
+.container{
+  margin: 0 auto;
+  width: 90%;
+  @media(width >= 48em){
+    width: 96%;
+  }
+}
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    padding: 10px 15px;
+    width: 100%;
+
+    @media (min-width: 48em) {
+      width: (100% / 12) * $i;
+    }
+  }
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  @media(width >= 48em){
+    flex-direction: row;
+  }
+}

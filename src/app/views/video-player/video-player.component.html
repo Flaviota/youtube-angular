@@ -1,0 +1,53 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-9">
+        <div *ngIf="video" class="video-player-page">
+          <div class="video-container">
+            <iframe
+              [src]="videoUrl"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <div class="video-details">
+            <h1 class="video-title">{{ video.title }}</h1>
+
+            <div class="video-meta">
+              <div class="video-stats">
+                <span>{{ video.views | number }} views</span>
+                <span>{{ video.uploadTime }}</span>
+              </div>
+
+              <div class="video-actions">
+                <button>
+                  <svg width="24" height="24" fill="currentColor"><use xlink:href="#icon-like"></use></svg>
+                  {{ video.likes }}
+                </button>
+                <button>
+                  <svg width="24" height="24" fill="currentColor"><use xlink:href="#icon-dislike"></use></svg>
+                  {{ video.dislikes }}
+                </button>
+              </div>
+            </div>
+
+            <div class="channel-info">
+              <img [src]="video.channelIconUrl" alt="Channel Icon" class="channel-icon" />
+              <div class="channel-details">
+                <span class="channel-name">{{ video.channelName }}</span>
+                <button class="subscribe-button">Subscribe</button>
+              </div>
+            </div>
+
+            <div class="video-description">
+              <p>{{ video.description }}</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>

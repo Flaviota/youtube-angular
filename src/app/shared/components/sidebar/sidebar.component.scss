@@ -1,0 +1,110 @@
+//vars
+$desktop: 48em;
+//custom
+.sidebar {
+  &_container {
+    padding: 0.8em;
+    &--logo {
+      width: 80%;
+      .hidde-menu {
+        display: none;
+      }
+    }
+    &--menu {
+      display: none;
+      .links {
+        display: flex;
+        flex-direction: column;
+        li {
+          a {
+            color: #f1f1f1;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            font-size: 1.2rem;
+            font-weight: 400;
+            flex: 1;
+            flex-basis: 0.000000001px;
+            gap: 10px;
+            text-overflow: ellipsis;
+            img {
+              width: 24px;
+              height: 24px;
+              fill: #bebebe;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (width >= $desktop) {
+    width: clamp(240px, 220px, 240px);
+    &_container {
+      padding: 0.8em;
+      &--logo {
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+        width: 80%;
+        .hidde-menu {
+          background-color: transparent;
+          border: none;
+          color: #fff;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          outline: none;
+          div,
+          div:after,
+          div:before {
+            background-color: #fff;
+            height: 3px;
+            width: 20px;
+          }
+          div {
+            position: relative;
+            &:after,
+            &:before {
+              content: "";
+              position: absolute;
+              left: 0;
+            }
+            &:after {
+              top: -6px;
+            }
+            &:before {
+              top: 6px;
+            }
+          }
+        }
+        img {
+          width: 7em;
+        }
+      }
+      &--menu {
+        display: flex;
+        flex-direction: column;
+        .links {
+          border-bottom: 1px solid #ffffff33;
+          margin-top: 0.8em;
+          min-height: 110px;
+          li {
+            border-radius: 10px;
+            width: calc(100% - 12px);
+            &.active, &:hover{
+              background-color: #333;
+            }
+            &:last-child{
+              margin-bottom: 10px;
+            }
+            a {
+              font-size: clamp(0.7em, 0.98em, 1.4em);
+              line-height: 30px;
+              padding: 0 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

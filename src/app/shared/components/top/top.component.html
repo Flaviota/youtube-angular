@@ -1,0 +1,35 @@
+<header class="top">
+  <div class="top_container">
+    <div class="top_container--search">
+      <input type="search" placeholder="Pesquisar" [(ngModel)]="searchQuery" />
+      <button>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          height="24"
+          viewBox="0 0 24 24"
+          width="24"
+          focusable="false"
+          style="pointer-events: none; display: inherit"
+          aria-hidden="true"
+        >
+          <path
+            clip-rule="evenodd"
+            d="M16.296 16.996a8 8 0 11.707-.708l3.909 3.91-.707.707-3.909-3.909zM18 11a7 7 0 00-14 0 7 7 0 1014 0z"
+            fill-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+    </div>
+    <div class="top_container--microphone">
+      <button>
+       <img src="../../../../assets/icons/microfone.png" alt="icone de microfone"/>
+      </button>
+    </div>
+    <div class="top_container--voice"></div>
+    <div class="top_container--actions">
+      <ul class="mobile"></ul>
+      <ul class="desktop"></ul>
+    </div>
+  </div>
+</header>

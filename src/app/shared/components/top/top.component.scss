@@ -1,0 +1,81 @@
+//vars
+$desktop: 48em;
+$radius: 2.5em;
+$button-size: 2.4em;
+$padding-inputSearch: 0.0625em 1em 0.05em;
+$color-grey: #333;
+$color-svgs: #f1f1f1;
+//customização
+.top {
+  &_container {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0.3125em 1em 0.05em;
+    position: relative;
+
+    &--search {
+      display: none;
+      @media (width >= $desktop) {
+        display: flex;
+        align-items: center;
+        padding: $padding-inputSearch;
+
+        button {
+          background-color: $color-grey;
+          border: none;
+          border-top-right-radius: $radius;
+          border-bottom-right-radius: $radius;
+          color: #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: $button-size;
+          width: 6em;
+
+          svg {
+            fill: $color-svgs;
+          }
+        }
+
+        input[type="search"] {
+          background-color: transparent;
+          border: 0.00625em solid #eeeeee6e;
+          border-top-left-radius: $radius;
+          border-bottom-left-radius: $radius;
+          padding-left: 1em;
+          width: clamp(31.25em, 18.75em, 40em);
+        }
+      }
+    }
+
+    &--microphone {
+      display: flex;
+      align-items: center;
+
+      button {
+        background-color: #2e2d2d;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: $button-size;
+        width: 2.625em;
+        position: absolute;
+        top: 0.25em;
+
+        img {
+          height: 1.5em;
+          width: 1.5em;
+        }
+      }
+      @media(width >= $desktop){
+        button{
+          top: 0.4em;
+        }
+      }
+    }
+  }
+}

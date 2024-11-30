@@ -1,0 +1,43 @@
+.links {
+  display: flex;
+  flex-direction: column;
+  li {
+    a {
+      color: #f1f1f1;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      font-size: 1.2rem;
+      font-weight: 400;
+      flex: 1;
+      flex-basis: 0.000000001px;
+      gap: 10px;
+      text-overflow: ellipsis;
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+  @media (width >= 48em) {
+    border-bottom: 1px solid #ffffff33;
+    margin-top: 0.8em;
+    min-height: 110px;
+    li {
+      border-radius: 10px;
+      width: calc(100% - 12px);
+      &.active,
+      &:hover {
+        background-color: #333;
+      }
+      &:last-child{
+        margin-bottom: 10px;
+      }
+      a {
+        font-size: clamp(0.7em, 0.98em, 1.4em);
+        line-height: 30px;
+        padding: 0 12px;
+      }
+    }
+  }
+}

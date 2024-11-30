@@ -1,0 +1,27 @@
+<section class="container-banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-3" *ngFor="let thumbnail of thumbnails">
+        <app-youtube-thumbnail-card
+          [thumbnailUrl]="thumbnail.thumbnailUrl"
+          [title]="thumbnail.title"
+          [channelName]="thumbnail.channelName"
+          [views]="thumbnail.views"
+          [uploadTime]="thumbnail.uploadTime"
+          [duration]="thumbnail.duration"
+          [channelIconUrl]="thumbnail.channelIconUrl"
+          [video]="thumbnail.video"
+          [videoId]="thumbnail.videoId"
+        ></app-youtube-thumbnail-card>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h2 class="title-short"><img src="assets/icons/shorts-red.svg" alt=""> Shorts</h2>
+      </div>
+      <div class="col-12">
+        <app-card-short></app-card-short>
+      </div>
+    </div>
+  </div>
+</section>

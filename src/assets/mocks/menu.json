@@ -1,0 +1,17 @@
+[
+  {
+    "icon": "assets/icons/home.svg",
+    "text": "Início",
+    "link": "/home"
+  },
+  {
+    "icon": "assets/icons/shorts.svg",
+    "text": "Shorts",
+    "link": "/shorts"
+  },
+  {
+    "icon": "assets/icons/subscriptions.svg",
+    "text": "Inscrições",
+    "link": "/subscriptions"
+  }
+]

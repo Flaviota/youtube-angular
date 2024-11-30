@@ -1,0 +1,225 @@
+$primary-color: #cc0000;
+$hover-color: #ff0000;
+$text-color: #333;
+$secondary-text-color: #606060;
+$background-color: #f9f9f9;
+$border-color: #e0e0e0;
+$font-family: Arial, sans-serif;
+$padding-base: 20px;
+
+.video-player-page {
+  display: flex;
+  flex-direction: column;
+  max-width: 1100px;
+  font-family: $font-family;
+  color: $text-color;
+
+  .video-container {
+    width: 100%;
+    margin-bottom: $padding-base;
+
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+      border-radius: 8px;
+      background-color: #000;
+    }
+  }
+
+  .video-details {
+    .video-title {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      line-height: 1.4;
+    }
+
+    .video-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+      font-size: 14px;
+      color: $secondary-text-color;
+
+      .video-stats {
+        display: flex;
+        align-items: center;
+
+        span {
+          margin-right: 20px;
+        }
+      }
+
+      .video-actions {
+        display: flex;
+        align-items: center;
+
+        button {
+          background: none;
+          border: none;
+          color: $secondary-text-color;
+          font-size: 14px;
+          cursor: pointer;
+          margin-right: 10px;
+          display: flex;
+          align-items: center;
+
+          &:hover {
+            color: $text-color;
+          }
+
+          svg {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+
+    .channel-info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+
+      .channel-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        margin-right: 15px;
+      }
+
+      .channel-details {
+        display: flex;
+        flex-direction: column;
+
+        .channel-name {
+          font-size: 16px;
+          font-weight: bold;
+          color: $text-color;
+          margin-bottom: 5px;
+        }
+
+        .subscribe-button {
+          background-color: $background-color;
+          border: none;
+          border-radius: 20px;
+          color: #333;
+          font-size: 14px;
+          font-weight: 400;
+          padding: 0px 20px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .video-description {
+      border-radius: 8px;
+      border: 1px solid $border-color;
+      color: $secondary-text-color;
+      font-size: 14px;
+      line-height: 1.6;
+      padding: 15px;
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .video-player-page {
+    padding: 10px;
+
+    .video-container {
+      iframe {
+        height: 350px;
+      }
+    }
+
+    .video-details {
+      .video-title {
+        font-size: 18px;
+      }
+
+      .video-meta {
+        flex-direction: column;
+        align-items: flex-start;
+
+        .video-stats {
+          margin-bottom: 10px;
+        }
+      }
+
+      .channel-info {
+        flex-direction: column;
+        align-items: flex-start;
+
+        .channel-icon {
+          width: 36px;
+          height: 36px;
+          margin-bottom: 10px;
+        }
+
+        .channel-details {
+          align-items: flex-start;
+
+          .subscribe-button {
+            padding: 8px 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .video-player-page {
+    padding: 5px;
+
+    .video-container {
+      iframe {
+        height: 250px;
+      }
+    }
+
+    .video-details {
+      .video-title {
+        font-size: 16px;
+      }
+
+      .video-meta {
+        .video-actions {
+          button {
+            font-size: 12px;
+
+            svg {
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+      }
+
+      .channel-info {
+        .channel-icon {
+          width: 32px;
+          height: 32px;
+        }
+
+        .channel-details {
+          .subscribe-button {
+            font-size: 12px;
+            padding: 6px 12px;
+          }
+        }
+      }
+
+      .video-description {
+        font-size: 12px;
+        padding: 10px;
+      }
+    }
+  }
+}

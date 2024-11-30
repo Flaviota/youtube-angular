@@ -1,0 +1,24 @@
+<aside class="sidebar">
+  <div class="sidebar_container">
+    <div class="sidebar_container--logo">
+      <button class="hidde-menu">
+        <div></div>
+      </button>
+      <img src="assets/imgs/logo-youtube.png" alt="logo-youtube" />
+    </div>
+    <nav class="sidebar_container--menu">
+      <ul class="links">
+        <li
+          *ngFor="let item of menuItems"
+          [ngClass]="{ active: activeLink === item.link }"
+        >
+          <a [routerLink]="item.link">
+            <img [src]="item.icon" alt="{{ item.text }} icon" />
+            <span>{{ item.text }}</span>
+          </a>
+        </li>
+      </ul>
+      <app-menu-you></app-menu-you>
+    </nav>
+  </div>
+</aside>

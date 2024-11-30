@@ -1,0 +1,13 @@
+//vars
+$desktop: 48em;
+//customização
+.theme{
+  background-color: #0f0f0f;
+  display: flex;
+  @media(width >= $desktop){
+    flex-direction: row;
+    .content{
+      width: 90%;
+    }
+  }
+}

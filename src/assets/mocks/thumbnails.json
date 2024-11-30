@@ -1,0 +1,70 @@
+[
+  {
+    "videoId": "abc123",
+    "thumbnailUrl": "assets/imgs/angular.png",
+    "title": "Recriando YouTube com Angular",
+    "channelName": "André Laurentino",
+    "views": 1500,
+    "uploadTime": "2 dias atrás",
+    "duration": "10:45",
+    "channelIconUrl": "https://scontent.fudi1-2.fna.fbcdn.net/v/t39.30808-6/376922817_1441894416539989_4290214204102478457_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=Gu99rbTvO8wQ7kNvgH_DZUE&_nc_ht=scontent.fudi1-2.fna&cb_e2o_trans=t&oh=00_AYDAqB46R55C6I8xuRlFQQf9qROWipWGr0IIwcwWdj2GBg&oe=66C02FA6",
+    "video": {
+      "url": "https://youtu.be/sfiWDNB8C1Y?si=h5RfynJqEzMfpuKjl",
+      "description": "Descrição detalhada do vídeo",
+      "likes": 12000,
+      "dislikes": 300,
+      "commentsCount": 500
+    }
+  },
+  {
+    "videoId": "def456",
+    "thumbnailUrl": "assets/imgs/php.png",
+    "title": "PHP do básico ao avançado (parte 1)",
+    "channelName": "André Laurentino",
+    "views": 1500,
+    "uploadTime": "1 dia atrás",
+    "duration": "15:00",
+    "channelIconUrl": "https://scontent.fudi1-2.fna.fbcdn.net/v/t39.30808-6/376922817_1441894416539989_4290214204102478457_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=Gu99rbTvO8wQ7kNvgH_DZUE&_nc_ht=scontent.fudi1-2.fna&cb_e2o_trans=t&oh=00_AYDAqB46R55C6I8xuRlFQQf9qROWipWGr0IIwcwWdj2GBg&oe=66C02FA6",
+    "video": {
+      "url": "https://www.example.com/video-url",
+      "description": "Descrição detalhada do vídeo",
+      "likes": 12000,
+      "dislikes": 300,
+      "commentsCount": 500
+    }
+  },
+  {
+    "videoId": "ghi789",
+    "thumbnailUrl": "assets/imgs/react.jpg",
+    "title": "Criando um portfólio com React",
+    "channelName": "André Laurentino",
+    "views": 1500,
+    "uploadTime": "1 dia atrás",
+    "duration": "15:00",
+    "channelIconUrl": "https://scontent.fudi1-2.fna.fbcdn.net/v/t39.30808-6/376922817_1441894416539989_4290214204102478457_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=Gu99rbTvO8wQ7kNvgH_DZUE&_nc_ht=scontent.fudi1-2.fna&cb_e2o_trans=t&oh=00_AYDAqB46R55C6I8xuRlFQQf9qROWipWGr0IIwcwWdj2GBg&oe=66C02FA6",
+    "video": {
+      "url": "https://www.example.com/video-url",
+      "description": "Descrição detalhada do vídeo",
+      "likes": 12000,
+      "dislikes": 300,
+      "commentsCount": 500
+    }
+  },
+  {
+    "videoId": "jlm101",
+    "thumbnailUrl": "assets/imgs/css.jpg",
+    "title": "Boas práticas com CSS",
+    "channelName": "André Laurentino",
+    "views": 1500,
+    "uploadTime": "1 dia atrás",
+    "duration": "15:00",
+    "channelIconUrl": "https://scontent.fudi1-2.fna.fbcdn.net/v/t39.30808-6/376922817_1441894416539989_4290214204102478457_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=Gu99rbTvO8wQ7kNvgH_DZUE&_nc_ht=scontent.fudi1-2.fna&cb_e2o_trans=t&oh=00_AYDAqB46R55C6I8xuRlFQQf9qROWipWGr0IIwcwWdj2GBg&oe=66C02FA6",
+    "video": {
+      "url": "https://www.example.com/video-url",
+      "description": "Descrição detalhada do vídeo",
+      "likes": 12000,
+      "dislikes": 300,
+      "commentsCount": 500
+    }
+  }
+]
